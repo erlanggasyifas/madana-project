@@ -1,0 +1,80 @@
+* {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.light-blue-color{
+    background-color: #E7F1FF;
+}
+.dark-blue-color{
+    background-color: #335C94;
+}
+.blue-font{
+    color: #335C94 !important;
+}
+.nav-item {
+    margin-right: 30px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 75px;
+}
+
+.jumbotron-section{
+    width: 100%;
+    position: relative;
+}
+
+.jumbotron-section img {
+    width: 100%;
+}
+
+.jumbotron-section .row {
+    position: absolute;
+    width: 100%; /* agar row memenuhi lebar jumbotron-section */
+}
+
+#about{
+    padding: 6rem 1rem;
+}
+
+#portofolio, #tools, #roles, #company{
+    padding: 3rem 1rem;
+}
+
+@media (max-width: 600px) {
+    .nav-item {
+        margin: 0 20px 10px;
+    }
+    .navbar-collapse {
+        margin: 10px 0 20px;
+    }
+    .get-quote {
+        display: none;
+    }
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .jumbotron-text {
+        text-align: center;
+    }
+    .jumbotron-section img {
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    #about img{
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 600px) {
+    .quote-resp {
+        display: none;
+    }
+}
