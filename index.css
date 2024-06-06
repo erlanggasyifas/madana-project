@@ -6,7 +6,7 @@
     background-color: #E7F1FF;
 }
 .dark-blue-color{
-    background-color: #335C94;
+    background-color: #335C94 !important;
 }
 .blue-font{
     color: #335C94 !important;
@@ -41,14 +41,73 @@
     width: 100%; /* agar row memenuhi lebar jumbotron-section */
 }
 
-#about{
-    padding: 6rem 1rem;
-}
-
 #portofolio, #tools, #roles, #company, #faq, #contact{
-    padding: 3rem 1rem;
+    padding: 7rem 1rem;
 }
 
+.feature-footer{
+    margin: 0;
+}
+
+.page-item{
+    border: solid #335C94; 
+    border-radius: 10px;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #335C94;
+}
+
+.row-list{
+    display: none;
+}
+
+.button-row{
+    display: none;
+}
+
+.btn-show-more{
+    display: none;
+}
+
+.fixed-whatsapp-icon {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    width: 80px;  /* Set the width as per the desired size */
+    height: 80px; /* Set the height as per the desired size */
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.porto-section-mobile{
+    display: none;
+}
+
+.page-item{
+    width: 35px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-outline-primary {
+    border-color: #335C94;
+    color: #335C94 !important;
+    background-color: transparent !important;
+  }
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #335C94 !important;
+    color: white !important;
+    border-color: #335C94;
+}
 @media (max-width: 600px) {
     .nav-item {
         margin: 0 20px 10px;
@@ -81,6 +140,56 @@
 
     .contact-submit{
         width: 100%;
+    }
+
+    .footer-icon{
+        justify-content: center;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+
+    #carouselExampleControls {
+        touch-action: pan-y;
+    }
+    .btn-show-more{
+        display: block;
+    }
+    .show-more-roles{
+        display: none;
+    }
+
+    #portofolio{
+        padding: 3rem, 1rem;
+    }
+
+    .fixed-whatsapp-icon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 80px;  /* Set the width as per the desired size */
+        height: 80px; /* Set the height as per the desired size */
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .porto-section-pc{
+        display: none;
+    }
+    
+    .porto-section-mobile{
+        display: block;
+    }
+    #tools, #faq{
+        padding: 2rem 1rem;
+    }
+    .roles-responsif{
+        display: none;
     }
 }
 
